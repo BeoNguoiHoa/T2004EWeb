@@ -1,0 +1,23 @@
+
+img{
+    width: 70px;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    background-position: left;
+    float: left;
+    align="left";
+}
+
+h4{
+    color: #ff0000;
+    text-decoration: underline;
+    text-align: left;
+    font-family: "monospace";
+}
+
+.benphai{
+    text-align: right;
+}
+
+
