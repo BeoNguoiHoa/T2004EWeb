@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 id="city"></h1>
+    <h2 id="temp"></h2>
+    <h3 id="press"></h3>
+    <h3 id="hum"></h3>
+    <h3 id="temp_min"></h3>
+    <h3 id="temp_max"></h3>
+    <h3 id="sea_lv"></h3>
+<script type="text/javascript">
+
+    var currentWeather = {
+        coord:{
+            lon:139.01,
+            lat:35.02
+        },
+        weather:
+            [
+                {
+                    id :800,
+                    main : "Clear" ,
+                    description : "clear sky , icon : 01n"
+                }
+            ],
+        base : "stations",
+        main :{
+            temp :285.514,
+            pressure :1013.75,
+            humidity :100,
+            temp_min :285.514,
+            temp_max :285.514,
+            sea_level :1023.22,
+            grnd_level :1013.75
+        },
+        wind :{
+            speed :5.52,
+            deg :311
+        },
+        clouds :{
+            all :0
+        },
+        dt :1485792967,
+        sys :{
+            message :0.0025,
+            country : "JP" ,
+            sunrise :1485726240,
+            sunset :1485763863
+        },
+        id :1907296,
+        name : "Tawarano",
+        cod :200
+    }
+    document.getElementById("city").innerText = currentWeather.name+" - "+currentWeather.sys.country
+    document.getElementById("temp").innerText = currentWeather.main.temp;
+    document.getElementById("press").innerText = currentWeather.main.pressure;
+    document.getElementById("hum").innerText = currentWeather.main.humidity;
+    document.getElementById("temp_min").innerText = currentWeather.main.temp_min;
+    document.getElementById("temp_max").innerText = currentWeather.main.temp_max;
+    document.getElementById("sea_lv").innerText = currentWeather.main.sea_level;
+</script>
+</body>
+</html>
