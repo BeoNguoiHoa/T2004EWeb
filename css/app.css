@@ -1,0 +1,20 @@
+body {
+    background-image: url("../imgs/anhnen.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: 'Be Vietnam';
+    font-weight: 700; /*100 200 300 400(normal) 500 600 700(bold) 800 900*/
+    line-height: 1.5;
+    text-decoration: underline; /* underline overline line-through nones*/
+    color: #ff1121; /*rgba(255, 7, 119, 0.9);8*/
+    background-color: rgba(237, 237, 245, 0);
+    border:10px dashed #ee00ff; /*dashed*/
+    border-bottom: 10px solid #ff1121;
+    border-top: 10px solid #77ff00;
+    text-align: center; /* left right justify*/
+}

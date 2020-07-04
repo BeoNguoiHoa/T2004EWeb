@@ -1,0 +1,37 @@
+.popup{
+    padding: 20px 0px;
+    background-color: black;
+    padding-left: 30px;
+    margin: 0 400px;
+}
+.container{
+    width: 800px;
+    margin: 0 auto;
+    padding-left: 200px;
+}
+h3{
+    color: white;
+}
+.content {
+    float: left;
+    width: 33.33%;
+}
+.slidebar{
+    float: right;
+    width: 66.67%;
+}
+.box1{
+    margin-top: 100px;
+}
+.input-text{
+    float: left;
+    width: 150px;
+    height: 32px;
+    color: #333333;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 5px 10px;
+    margin-top: 0px;
+}

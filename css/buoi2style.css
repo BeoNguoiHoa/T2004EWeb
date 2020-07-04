@@ -1,0 +1,18 @@
+body{
+    background: black;
+    background-image: url("../imgs/abc.jpg");   /* dtạo đường dẫn link ảnh theo nguyên lý cây thư mục */
+    background-repeat: no-repeat;  /*ko lap lai*/
+    background-position: center;  /* cho ảnh vào chính giữa*/
+    background-size: cover;      /* cho size anh full*/
+    border: 1px solid red;    /*đường biên sung quanh*/
+    text-align: center;  /* căn chữ trái phải giữa đều */
+}
+h1{
+    font-size: 200px; / *font chữ px điểm ảnh */
+    font-family: 'Be Vietnam';   /* loại chữ */
+    font-weight: 400;    /* độ đậm nhạt của chữ  100 200 300 400(normal) 500 600 700 bold 800 900*/
+    line-height: 2;   /* dộ cao của dòng*/
+    text-decoration: underline line-through overline; /* gạch dưới gạch giữa gạch dưới none ko gach  */
+    color: #ff112390;  /* màu chữ rgba(255,17,34,50) them 50 sau cung lam mời đi*/
+    background-color: #f5f5dc;  /*màu nền*/
+}

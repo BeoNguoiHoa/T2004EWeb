@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Be Vietnam';
+    font-size: 14px;
+    color: #333333;
+    background-color: beige;
+    font-weight: 400;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.header,.main,.footer{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header-left{
+    float: left;
+    width: 20%;
+}
+.header-right{
+    float: right;
+    width: 60%;
+}
+.content{
+    float: left;
+    width: 66.67%;
+}
+.slidebar{
+    float: right;
+    width: 33.33%;
+}
+.header{
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+.logo {
+    font-size: 30px;
+    font-weight: 700px;
+    color: #333131;
+}
+.menu li{
+    float: right;
+    margin-left: 35px;
+    padding: 10px 0;
+}
+.menu li:last-child{
+    list-style: none;
+}
+.menu li a{
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+    /*uppercase lowcase capitalize none*/
+    color: #333131;
+    font-weight: 600;
+}
+.h4{
+    color: white;
+}
+.box1{
+    width: calc(70% - 20px);
+    height: 150px;
+    float: left;
+    border: 1px solid white;
+    padding: 10px 5px 10px 30px;
+    background-color: red;
+    margin-right: 1px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    border-radius: 1px;
+    position: relative;
+    box-sizing: border-box;
+    opacity: 0.5;
+}
+h4{
+    color: white;
+}
+p{
+    color: white;
+}

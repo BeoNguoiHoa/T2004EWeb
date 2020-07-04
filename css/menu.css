@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    float: left;
+    width: 600px;
+}
+.menu > li{
+    float: left;
+    padding: 5px 15px;
+    border-bottom: 1px solid #333333;
+    position: relative;
+    margin-left: 10px;
+}
+.submenu{
+    display: none;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    float: left;
+    width: 300px;
+    border: 1px solid #333333;
+}
