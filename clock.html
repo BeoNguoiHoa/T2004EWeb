@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clock</title>
+    <link rel="stylesheet" href="css/clock.css">
+</head>
+<body>
+    <div class="clock">
+        <span class="min" id="min12">12</span>
+        <span class="min" id="min1">1</span>
+        <span class="min" id="min2">2</span>
+        <span class="min" id="min3">3</span>
+        <span class="min" id="min4">4</span>
+        <span class="min" id="min5">5</span>
+        <span class="min" id="min6">6</span>
+        <span class="min" id="min7">7</span>
+        <span class="min" id="min8">8</span>
+        <span class="min" id="min9">9</span>
+        <span class="min" id="min10">10</span>
+        <span class="min" id="min11">11</span>
+        <div class="min-arrow" id="min-arrow"></div>
+        <div class="hour-arrow" id="hour-arrow"></div>
+    </div>
+    <script type="text/javascript">
+        var date = new Date();
+        var hour = date.getHours()>12?date.getHours()-12:date.getHours();
+        var min = date.getMinutes();
+        var min_deg = min*6;
+        var hour_deg = hour*30+min*0.5;
+        setInterval(function () {
+            document.getElementById("min-arrow").style.transform = "rotate("+min_deg+"deg)";
+            document.getElementById("hour-arrow").style.transform = "rotate("+hour_deg+"deg)";
+            min_deg+=6
+            if (min_deg>=360){
+                min_deg= 0;
+            }
+            hour_deg+= 0,5;
+            if (hour_deg>=360){
+                hour_deg = 0;
+            }
+        },6000);
+    </script>
+</body>
+</html>
