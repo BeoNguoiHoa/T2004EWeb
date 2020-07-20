@@ -1,0 +1,49 @@
+body{
+    background-image: url("../imgs/blue-sky-with-cloud-clean-energy-power-clear-weather-background_43284-844.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+h2{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 30px;
+}
+.section{
+    float: left;
+    width: 100%;
+}
+#map{
+    width: 100%;
+    float: left;
+    height: 500px;
+}
+.item{
+    float: left;
+    width: 100%;
+    margin: 15px 0;
+    border: 1px solid #1b6d85;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: purple;
+    position: relative;
+}
+.item p{
+    font-size: 20px;
+    color: #ffffff;
+}
+.item .temp{
+    font-size: 35px;
+}
+.item .desc{
+    font-size: 16px;
+}
+.item img{
+    position: absolute;
+    right: 10px;
+    top: 40px;
+}

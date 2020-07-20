@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lab13_weather</title>
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="libs/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="css/lab13.css">
+</head>
+<body>
+<section class="section">
+    <div class="container">
+        <h1>Thoi tiet hom nay va ngay mai</h1>
+        <h2>Thanh pho: </h2>
+        <div class="row" id="weather">
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div id="map"></div>
+</section>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    $.ajax({
+        url:"http://api.openweathermap.org/data/2.5/forecast",
+        method:"GET",
+        data:{
+            q: "Hanoi,vietnam",
+            appid: "09a71427c59d38d6a34f89b47d75975c",
+            units: "metric"
+        },
+        success:function (rs) {
+            $("h2").text(rs.city.name+", "+rs.city.country);
+            rs.list.map(function (e) {
+                let item_html = " <div class=\"col-md-3 col-xs-4 col-xs-6\">\n" +
+                    "                <div class=\"item\">\n" +
+                    "                    <p class=\"datetime\">"+e.dt_txt+"</p>\n" +
+                    "                    <p class=\"temp\">"+e.main.temp+"<span><sup>o</sup></span>C</p>\n" +
+                    "                    <p class=\"desc\">"+e.weather[0].description+"</p>\n" +
+                    "                    <img src=\"http://openweathermap.org/img/wn/"+e.weather[0].icon+"@2x.png\"/>\n" +
+                    "                </div>\n"  +
+                    "           </div>";
+                // $("#weather").html($("#weather").html()+item_html);
+                $("#weather").append(item_html);
+            })
+        }
+    });
+    //map
+    var uluru = {lat: 21.0288, lng: 105.7795};
+    let coord = navigator.geolocation.getCurrentPosition(getLocation);
+    function getLocation(position) {
+        let urulu = {
+            let: position.coords.latitude,
+            lng: position.coords.latitude
+        }
+        initMap();
+    }
+
+    function initMap() {
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 4, center: uluru});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: uluru, map: map, label:"Đại học FPT Hà Nội"});
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaj0mHlR-keu-9hsR6d-gB0L9BclG04rk&callback=initMap">
+</script>
+</body>
