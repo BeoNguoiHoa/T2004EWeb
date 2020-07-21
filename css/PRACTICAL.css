@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    color: #333333;
+    background-color: darkgrey;
+    font-weight: 400;
+    line-height: 1.5;
+}
+img{
+    max-width: 100%;
+}
+.header,.main,.footer{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header-left{
+    float: left;
+    width: 20%;
+}
+.header-right{
+    float: right;
+    width: 60%;
+    margin-right: 90px;
+}
+.content{
+    float: left;
+    width: 40%;
+    padding-top: 30px;
+}
+.slidebar{
+    float: right;
+    width: 60%;
+    padding-top: 50px;
+}
+.header{
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+.logo {
+    font-size: 30px;
+    font-weight: 700px;
+    color: #333131;
+}
+.menu li{
+    float: right;
+    margin-left: 35px;
+    padding: 10px 0;
+    list-style: none;
+}
+.menu li a{
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    color: #333131;
+    font-weight: 600;
+    text-decoration: none;
+}
+.input-text{
+    width: 300px;
+    height: 32px;
+    color: #333333;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 5px 10px;
+}
+.photo{
+    padding-left: 190px;
+    max-width: 100%;
+}
