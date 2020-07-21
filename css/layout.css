@@ -35,11 +35,11 @@ img{
 }
 .content{
     float: left;
-    width: 66.67%;
+    width: 33.33%;
 }
 .slidebar{
     float: right;
-    width: 33.33%;
+    width: 67.67%;
 }
 .header{
     padding: 20px 0;
