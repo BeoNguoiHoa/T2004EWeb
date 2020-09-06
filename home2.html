@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>home</title>
-    <link rel="stylesheet" type="text/css" href="css/home2.css"/>
+    <title>HOME</title>
+    <link rel="stylesheet" type="text/css" href="css/home.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="libs/fontawesome/css/all.css"/>
     <link rel="stylesheet" href="libs/nivoslider/default/default.css"/>
     <link rel="stylesheet" href="libs/nivoslider/nivo-slider.css"/>
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
-    <link rel="stylesheet" type="text/css" href="libs/fontawesome/css/all.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="header">
@@ -19,7 +19,7 @@
                 <div class="menu-bar">
                     <div class="z-menu-bar-inner">
                         <ul class="z-nav">
-                            <li><a class="nav-link" href="#">Trang Chủ</a></li>
+                            <li><a class="nav-link active" href="#">Trang Chủ</a></li>
                             <li><a class="nav-link" href="#">#ZINGCHART</a></li>
                             <li><a class="nav-link" href="#">MỚI PHÁT HÀNH</a></li>
                             <li><a class="nav-link" href="#">CHỦ ĐỀ</a></li>
@@ -38,23 +38,23 @@
                                 <i class="fas fa-search"></i>
                             </div>
                             <div class="input-wrapper">
-                                <input type="text" class="form-control" placeholder="Nhập tên bài hát, ca sĩ hoặc mv…"/>
+                                <input type="text" class="form-search" placeholder="Nhập tên bài hát, ca sĩ hoặc mv…"/>
                             </div>
                         </div>
                     </form>
                 </div>
                 <div class="user-profile">
-                    <div class="text-vailzluon">
+                    <div class="text-vll">
                         <a href="#">LOGIN</a>
                     </div>
-                    <div class="icon-vailzluon">
+                    <div class="icon-vll">
                         <a href="#">
                             <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
                             </svg>
                         </a>
                     </div>
-                    <div class="icon-vailzluon">
+                    <div class="icon-vll">
                         <a href="#">
                             <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-upload" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
@@ -62,7 +62,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="icon-vailzluon">
+                    <div class="icon-vll">
                         <a href="#">
                             <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-bell" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2z"/>
@@ -75,26 +75,28 @@
         </div>
     </div>
 </header>
-<section class="main">
-            <div class="container">
-                <div class="slider-wrapper theme-default">
-                    <div id="slider" class="nivoSlider">
-                        <img src="https://photo-zmp3.zadn.vn/banner/f/8/2/4/f82492fcae7dfe5fef0c7cb36926ce60.jpg"/>
-                        <img src="https://photo-zmp3.zadn.vn/banner/d/e/5/2/de52529edfcf3da1b48b58ff1543afa8.jpg"/>
-                        <img src="https://photo-zmp3.zadn.vn/banner/6/5/7/0/6570f78d5603b413399892de1bda53c2.jpg"/>
-                        <img src="https://photo-zmp3.zadn.vn/banner/4/9/c/d/49cd47297876654a44c33d46ec80fc2f.jpg"/>
-                        <img src="https://photo-zmp3.zadn.vn/banner/6/d/e/e/6deeed08ba9cdb793201a1a2290bbe61.jpg"/>
-                    </div>
-                </div>
+<section class="main-nivo">
+    <div class="container">
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="https://photo-zmp3.zadn.vn/banner/f/8/2/4/f82492fcae7dfe5fef0c7cb36926ce60.jpg"/>
+                <img src="https://photo-zmp3.zadn.vn/banner/d/e/5/2/de52529edfcf3da1b48b58ff1543afa8.jpg"/>
+                <img src="https://photo-zmp3.zadn.vn/banner/6/5/7/0/6570f78d5603b413399892de1bda53c2.jpg"/>
+                <img src="https://photo-zmp3.zadn.vn/banner/4/9/c/d/49cd47297876654a44c33d46ec80fc2f.jpg"/>
+                <img src="https://photo-zmp3.zadn.vn/banner/6/d/e/e/6deeed08ba9cdb793201a1a2290bbe61.jpg"/>
             </div>
+        </div>
+    </div>
+</section>
+<section class="main-hover">
     <div class="container">
         <div id="wrap">
             <div class="list">
-                <h2>JAZZ</h2>
+                <h2>TOP 100</h2>
                 <div class="song">
                     <a href="#">
                         <div class="image1">
-                            <img class="image__img" src="images/download.png"/>
+                            <img class="image__img" src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/c/4/a/6/c4a65f93f721069039f946f399a9f5a8.jpg"/>
                             <div class="image__overlay image__overlay--primary">
                                 <div class="image__title">
                                     <svg width="2em" height="3em" viewBox="0 0 16 16" class="bi bi-play" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -105,14 +107,14 @@
                         </div>
                     </a>
                     <div class="texthere">
-                        <a href="#">Son Tung MTP</a>
+                        <a href="#">TOP 100 Nhạc Trẻ</a>
                     </div>
                 </div>
 
                 <div class="song">
                     <a href="#">
                         <div class="image1">
-                            <img class="image__img" src="images/download.png"/>
+                            <img class="image__img" src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/0/b/e/5/0be5e24c4d4c70999f90f9039c427478.jpg"/>
                             <div class="image__overlay image__overlay--primary">
                                 <div class="image__title">
                                     <svg width="2em" height="3em" viewBox="0 0 16 16" class="bi bi-play" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -123,14 +125,14 @@
                         </div>
                     </a>
                     <div class="texthere">
-                        <a href="#">Son Tung MTP</a>
+                        <a href="#">Top 100 Nhạc Âu Mỹ</a>
                     </div>
                 </div>
 
                 <div class="song">
                     <a href="#">
                         <div class="image1">
-                            <img class="image__img" src="images/taylor.jfif"/>
+                            <img class="image__img" src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/5/9/a/b/59abf94a149a426e419aa38580073365.jpg"/>
                             <div class="image__overlay image__overlay--primary">
                                 <div class="image__title">
                                     <svg width="2em" height="3em" viewBox="0 0 16 16" class="bi bi-play" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -141,14 +143,14 @@
                         </div>
                     </a>
                     <div class="texthere">
-                        <a href="#">Son Tung MTP</a>
+                        <a href="#">Top 100 Nhạc EDM</a>
                     </div>
                 </div>
 
                 <div class="song">
                     <a href="#">
                         <div class="image1">
-                            <img class="image__img" src="images/eminem.jfif"/>
+                            <img class="image__img" src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/1/1/7/4/1174de60bc4d99d042f1f49ba276fc0f.jpg"/>
                             <div class="image__overlay image__overlay--primary">
                                 <div class="image__title">
                                     <svg width="2em" height="3em" viewBox="0 0 16 16" class="bi bi-play" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -159,128 +161,35 @@
                         </div>
                     </a>
                     <div class="texthere">
-                        <a href="#">Son Tung MTP</a>
-                    </div>
-                </div>
-                <div class="song">
-                    <a href="#">
-                        <div class="image1">
-                            <img class="image__img" src="images/selenagomez.jpeg"/>
-                            <div class="image__overlay image__overlay--primary">
-                                <div class="image__title">PLAY</div>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="texthere">
-                        <a href="#">Son Tung MTP</a>
-                    </div>
-                </div>
-                <div class="song">
-                    <a href="#">
-                        <div class="image1">
-                            <img class="image__img" src="images/download.png"/>
-                            <div class="image__overlay image__overlay--primary">
-                                <div class="image__title">PLAY</div>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="texthere">
-                        <a href="#">Son Tung MTP</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="list">
-                <h2>Best Artist</h2>
-                <div class="song">
-                    <a href="#">
-                        <div class="image1">
-                            <img class="image__img" src="images/download.png"/>
-                            <div class="image__overlay image__overlay--primary">
-                                <div class="image__title">PLAY</div>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="texthere">
-                        <a href="#">Son Tung MTP</a>
+                        <a href="#">Top 100 Nhạc Trữ Tình</a>
                     </div>
                 </div>
 
                 <div class="song">
                     <a href="#">
                         <div class="image1">
-                            <img class="image__img" src="images/download.png"/>
+                            <img class="image__img" src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/3/f/b/e/3fbe84c6d3afb90188c46368eeea4bf5.jpg"/>
                             <div class="image__overlay image__overlay--primary">
-                                <div class="image__title">PLAY</div>
+                                <div class="image__title">
+                                    <svg width="2em" height="3em" viewBox="0 0 16 16" class="bi bi-play" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </a>
                     <div class="texthere">
-                        <a href="#">Son Tung MTP</a>
-                    </div>
-                </div>
-
-                <div class="song">
-                    <a href="#">
-                        <div class="image1">
-                            <img class="image__img" src="images/download.png"/>
-                            <div class="image__overlay image__overlay--primary">
-                                <div class="image__title">PLAY</div>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="texthere">
-                        <a href="#">Son Tung MTP</a>
-                    </div>
-                </div>
-
-                <div class="song">
-                    <a href="#">
-                        <div class="image1">
-                            <img class="image__img" src="images/download.png"/>
-                            <div class="image__overlay image__overlay--primary">
-                                <div class="image__title">PLAY</div>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="texthere">
-                        <a href="#">Son Tung MTP</a>
-                    </div>
-                </div>
-                <div class="song">
-                    <a href="#">
-                        <div class="image1">
-                            <img class="image__img" src="images/download.png"/>
-                            <div class="image__overlay image__overlay--primary">
-                                <div class="image__title">PLAY</div>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="texthere">
-                        <a href="#">Son Tung MTP</a>
-                    </div>
-                </div>
-                <div class="song">
-                    <a href="#">
-                        <div class="image1">
-                            <img class="image__img" src="images/download.png"/>
-                            <div class="image__overlay image__overlay--primary">
-                                <div class="image__title">PLAY</div>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="texthere">
-                        <a href="#">Son Tung MTP</a>
+                        <a href="#">Top 100 Nhạc KPOP</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="libs/nivoslider/jquery.nivo.slider.js"></script>
-    <script type="text/javascript">
-        $('#slider').nivoSlider();
-    </script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="libs/nivoslider/jquery.nivo.slider.js"></script>
+<script type="text/javascript">
+    $('#slider').nivoSlider();
+</script>
 </body>
 </html>

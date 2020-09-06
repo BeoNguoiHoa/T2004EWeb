@@ -117,7 +117,7 @@ a{
     font-size: 20px;
     line-height: 66%;
 }
-.form-control{
+.form-search{
     width: 540px;
     height: 40px;
     padding: 5px 30px;
@@ -131,14 +131,14 @@ a{
     width: auto;
     margin-right: 50px;
 }
-.icon-vailzluon{
+.icon-vll{
     width: auto;
     height: auto;
     float: right;
     padding-right: 15px;
     padding-top: 20px;
 }
-.text-vailzluon{
+.text-vll{
     width: auto;
     height: auto;
     float: right;
